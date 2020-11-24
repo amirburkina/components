@@ -11,37 +11,8 @@ Purchase: https://1.envato.market/EA4JP
 Renew Support: https://1.envato.market/EA4JP
 License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
 -->
-{% include 'header.html' %}
-    Body
-{% include 'footer.html' %}
-<html lang="en" >
-    <!--begin::Head-->
-    <head><base href="">
-                <meta charset="utf-8"/>
-        <title>Metronic | Dashboard</title>
-        <meta name="description" content="Updates and statistics"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-
-        <!--begin::Fonts-->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"/>        <!--end::Fonts-->
-
-                    <!--begin::Page Vendors Styles(used by this page)-->
-                            <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css"/>
-                        <!--end::Page Vendors Styles-->
-
-
-        <!--begin::Global Theme Styles(used by all pages)-->
-                    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
-                    <link href="assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css"/>
-                    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css"/>
-                <!--end::Global Theme Styles-->
-
-        <!--begin::Layout Themes(used by all pages)-->
-                <!--end::Layout Themes-->
-
-        <link rel="shortcut icon" href="assets/media/logos/favicon.ico"/>
-
-            </head>
+   <!--begin::Head-->
+{% include 'components/header.html.swig' %}
     <!--end::Head-->
 
     <!--begin::Body-->
@@ -3717,39 +3688,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!--end::Scrolltop-->
 
                             <!--begin::Sticky Toolbar-->
-<ul class="sticky-toolbar nav flex-column pl-2 pr-2 pt-3 pb-3 mt-4">
-	<!--begin::Item-->
-	<li class="nav-item mb-2" id="kt_demo_panel_toggle" data-toggle="tooltip"  title="Check out more demos" data-placement="right">
-		<a class="btn btn-sm btn-icon btn-bg-light btn-icon-success btn-hover-success" href="#">
-			<i class="flaticon2-drop"></i>
-		</a>
-	</li>
-	<!--end::Item-->
-
-	<!--begin::Item-->
-	<li class="nav-item mb-2" data-toggle="tooltip" title="Layout Builder" data-placement="left">
-        		<a class="btn btn-sm btn-icon btn-bg-light btn-icon-primary btn-hover-primary" href="https://preview.keenthemes.com/metronic/preview/demo10/builder.html" target="_blank">
-			<i class="flaticon2-gear"></i>
-		</a>
-	</li>
-	<!--end::Item-->
-
-	<!--begin::Item-->
-	<li class="nav-item mb-2" data-toggle="tooltip" title="Documentation" data-placement="left">
-		<a class="btn btn-sm btn-icon btn-bg-light btn-icon-warning btn-hover-warning" href="https://keenthemes.com/metronic/?page=docs" target="_blank">
-			<i class="flaticon2-telegram-logo"></i>
-		</a>
-	</li>
-	<!--end::Item-->
-
-			<!--begin::Item-->
-		<li class="nav-item" id="kt_sticky_toolbar_chat_toggler" data-toggle="tooltip" title="Chat Example" data-placement="left">
-			<a class="btn btn-sm btn-icon btn-bg-light btn-icon-danger btn-hover-danger" href="#" data-toggle="modal" data-target="#kt_chat_modal">
-				<i class="flaticon2-chat-1"></i>
-			</a>
-		</li>
-		<!--end::Item-->
-	</ul>
+{% include 'components/stickytoolbar.html.swig' %}
 <!--end::Sticky Toolbar-->
                 <!--begin::Demo Panel-->
 <div id="kt_demo_panel" class="offcanvas offcanvas-right p-10">
